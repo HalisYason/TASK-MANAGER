@@ -53,15 +53,17 @@ task yeri
 
 - plan - yapılıyor - bitti
 - 3 tane bolme olacak yan yana ve biz üstte eklendgimiz taskları plan sekmesine yazacaksın
-
-- bu yerlerin içindeki tasklar bir kart formunda olsun  birbirinden ayrı görünsün yani
-style 
+- bu yerlerin içindeki tasklar bir kart formunda olsun  birbirinden ayrı görünsün yani 
 - bölmelerin renkleri modern ve uyumlu farklı olsun
 - bolmelerın içindeki kartlar ise beyaz olsun kartın şelkli
 - dıkdortgen dusunecek olursak task ortada yazsın yazı güzel siyah olsun 
-kartın sag üst kısmında yukarda sordugumuz tarih ten suanın tarıhını çıkararak bulacagımız gün sayısı yazsın orn 4 gün 
+- kartın sag üst kısmında yukarda sordugumuz tarih ten suanın tarıhını çıkararak bulacagımız gün sayısı yazsın orn 4 gün 
+- her eklenen kartın kapladığı bir alan olsun yani boyutu, sınırları ve diğer kartların birbirine yakınlığı sabit olsun.
+- her yeni kart eklendiğinde diğer kartların kapladıkları yer küçülmesin dediğim gibi boyutları sabit olsun diğer kartlar bulundukları bölmenin altına doğru    kaysınlar.
+- kartın içinde taşımak ve silmek için iki buton daha olsun yerlerini sen ayarla 
+- her bolme kendi içinde ayrı ayrı kaydırılabilir olsun
+- her eklenen kart oneliklendirilsin yani teslim tarıhı yakın olanlar üstte uzak olanlar altta olacak şekilde sıralansınlar.
 
-kartın içinde taşımak ve silmek için iki buton daha olsun yerlerini sen ayarla 
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
