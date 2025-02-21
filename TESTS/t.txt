@@ -1,0 +1,67 @@
+Ana Kodları Nereye Yazacağım?
+Ana kodlarını proje yapısına göre organize etmek, büyüdükçe kodu yönetmeni kolaylaştırır.
+
+Senin Task Manager (Görev Yöneticisi) uygulaman için en iyi yapı şudur:
+
+📂 gorev_yoneticisi/ (Ana proje klasörü)
+├── 📂 src/ (Kaynak kodları)
+│ ├── 📂 ui/ (Arayüz - Tkinter)
+│ │ ├── main.py (Ana kod buraya) ✅
+│ │ ├── task_manager.py (Görev yönetim işlemleri)
+│ │ ├── buttons.py (Butonlar ve UI bileşenleri)
+│ │ ├── style.py (Arayüz renkleri, fontlar)
+│ │
+│ ├── 📂 backend/ (İş mantığı & veri yönetimi)
+│ │ ├── database.py (Veritabanı işlemleri)
+│ │ ├── task_logic.py (Görevleri yönetme ve taşıma işlemleri)
+│ │
+├── 📂 data/ (Veriler)
+│ ├── tasks.json (Görevleri saklamak için)
+│ ├── config.json (Ayarlar dosyası)
+
+Ana Kod (Main) Dosyası:
+Ana kodları VS Code içinde src/ui/main.py dosyasına yazacaksın.
+Bu dosya uygulamayı çalıştıran ana dosya olacak.
+
+Fonksiyon Kodları:
+Görev ekleme/silme fonksiyonları → task_manager.py
+Görevleri veritabanına kaydetme, okuma → database.py
+UI butonları ve arayüz yönetimi → buttons.py
+Tasarım renkleri ve stiller → style.py
+
+
+
+----
+
+
+
+arka plan
+- arkaplan rengi beyaz olacak
+
+
+ogelerin yerleri
+
+- task manager yani to do list yapacagımız için bir duzen  kuralım
+- taskları eklemek için tam orta üst kısımda bir kare olsun içinde taskı yazacagımız bir line edit
+-  hemen altında  hangi tarihte bu tası yapacagımızı soran bir yer daha bizden gun ay yıl şeklinde alsın
+- sonra hemen altlarında bir buton ekle  taskı olusturmak için 
+
+style -  bu kare ust ortada olsun dış şeritleri bellı olsun amam güzel görünsün butonun yerini şeklini rengini güzel yap
+- hepsi hizalı ve pro olsun modern görünsün
+
+task yeri 
+
+- plan - yapılıyor - bitti
+- 3 tane bolme olacak yan yana ve biz üstte eklendgimiz taskları plan sekmesine yazacaksın
+
+- bu yerlerin içindeki tasklar bir kart formunda olsun  birbirinden ayrı görünsün yani
+style 
+- bölmelerin renkleri modern ve uyumlu farklı olsun
+- bolmelerın içindeki kartlar ise beyaz olsun kartın şelkli
+- dıkdortgen dusunecek olursak task ortada yazsın yazı güzel siyah olsun 
+kartın sag üst kısmında yukarda sordugumuz tarih ten suanın tarıhını çıkararak bulacagımız gün sayısı yazsın orn 4 gün 
+
+kartın içinde taşımak ve silmek için iki buton daha olsun yerlerini sen ayarla 
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
